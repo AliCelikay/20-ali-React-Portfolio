@@ -1,3 +1,4 @@
+// We have to first import `useState` with React in order to take advantage of the hook
 import React, { useState } from 'react';
 import Navbar from "Navbar";
 import About from "./pages/About";
@@ -10,14 +11,41 @@ import Footer from "Footer";
 // Components let us split the UI into independent, reusable pieces, and also think about each piece in isolation.
 function PortfolioComponent() {
 
+    // Declaring a state variable `currentPage` using `useState`
+    // Give the method to update it a name, `setCurrentPage`
+    // useState accepts one argument for the default or initial value of the state variable. setCurrentPage allows us to update currentPage variable
+    const [currentPage, setCurrentPage] = useState("About");// setting currentState to be 'About' so that when the application loads, the 'About' page loads automatically
+
+    // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+    const renderPage = () => {
+        if (currentPage === 'About') {
+            return <About />;
+        }
+        if (currentPage === 'Portfolio') {
+            return <Portfolio />;
+        }
+        if (currentPage === 'Contact') {
+            return <Contact />;
+        }
+        return <Resume />;
+    };
+
+    const handlePageChange = (page) => setCurrentPage(page);
+
+    return (
+        <div>
+            {/* We are passing the currentPage from state and the function to update it */}
+            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+
+            {/* Here we are calling the renderPage method which will return a component  */}
+            {renderPage()}
+
+            <Footer />
+        </div>
+    );
 
 }
 
 
 
 export default PortfolioComponent;
-
-
-    // JSX is a syntax extension to JavaScript that looks like HTML.
-    // JSX is compiled by something called "Babel" into widely supported ES5 syntax.
-    // The curly braces allow us to pass values and expressions into our view.
