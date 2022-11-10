@@ -8,7 +8,7 @@ export default function Resume() {
                     Resume
                 </h2>
                 <div>
-                    <p>Download my <a>resume</a></p>
+                    <p>Download my <a target="_blank">resume</a></p>
                 </div>
                 <div>
                     <h3>Front-end Proficiencies</h3>
