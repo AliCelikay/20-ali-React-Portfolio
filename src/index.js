@@ -4,7 +4,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 // importing bootstrap
-import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // ReactDOM.render takes a React component, or tree of React components and (eventually) renders them to the DOM.

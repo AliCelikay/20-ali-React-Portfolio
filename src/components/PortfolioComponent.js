@@ -1,11 +1,11 @@
 // We have to first import `useState` with React in order to take advantage of the hook
 import React, { useState } from 'react';
-import Navbar from "Navbar";
+import Navbar from "./Navbar";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
-import Footer from "Footer";
+import Footer from "./Footer";
 
 // Components are responsible for rendering some part of an application's UI.
 // Components let us split the UI into independent, reusable pieces, and also think about each piece in isolation.
