@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import validateEmail from '../../utils/helpers';
 
 export default function Contact() {
     // Create state variables for the fields in the form
@@ -20,12 +20,11 @@ export default function Contact() {
             setName(inputValue);
         } else if (inputType === 'email') {
             setEmail(inputValue);
-        } else {
+        } else if (inputType === 'message') {
             setEmailMessage(inputValue);
-        }
-    };
+        };
 
-
+    }
     const handleFormSubmit = (e) => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         e.preventDefault();
@@ -49,6 +48,11 @@ export default function Contact() {
             );
             return;
         }
+
+        // If everything goes according to plan, we want to clear out the input after a successful message.
+        setName('');
+        setEmail('');
+        setEmailMessage('');
     }
     return (
         <>
@@ -58,29 +62,34 @@ export default function Contact() {
                     <label>Name</label>
                     <input
                         type='text'
+                        value={name}
+                        name='name'
                         className='form-input form-control'
                         placeholder='Please enter your full name'
-                        onBlur={handleInputChange}
+                        onChange={handleInputChange}
                         required
                     />
                 </div>
                 <div className='form-group'>
                     <label>Email Address</label>
                     <input
-                        type='email'
+                        type='text'
+                        value={email}
+                        name='email'
                         className='form-input form-control'
                         placeholder='Please enter your email address'
-                        onBlur={handleInputChange}
+                        onChange={handleInputChange}
                         required
                     />
                 </div>
                 <div className='form-group'>
                     <label>Message</label>
                     <textarea
-                        type='message'
+                        value={emailMessage}
+                        name='message'
                         className=' form-control'
                         placeholder='Please enter your message'
-                        onBlur={handleInputChange}
+                        onChange={handleInputChange}
                         rows="5"
                         required
                     />
