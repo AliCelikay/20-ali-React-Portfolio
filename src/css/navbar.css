@@ -1,0 +1,11 @@
+nav {
+    /* important overwrites anything previously */
+    position: sticky !important;
+    top: 0 !important;
+    /* navbar need to be above the content, w/o this then the nav would be behind the web conten */
+    z-index: 1;
+}
+
+.navItems {
+    justify-content: right !important;
+}

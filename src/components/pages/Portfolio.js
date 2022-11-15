@@ -63,7 +63,7 @@ export default function Portfolio() {
                     description="App utilizes MERN features, a 3rd party api, and CRUD Methods to write stories about your favorite hero's"
                     image={Project3}
                     github="https://github.com/hamzaramzanali/fan-fiction"
-                    link=""
+                    link="https://stark-sierra-05669.herokuapp.com/"
                     gitHubLink="GitHub Repo"
                     liveLink="Live Link"
                 />
