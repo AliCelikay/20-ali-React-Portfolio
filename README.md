@@ -1,7 +1,7 @@
 # React Portfolio
 
 ## Description
-
+This portfolio utilizes React and is split into smaller components for easier usage and easier to add features. Inside, you will find an about me page, a few of my projects, an area to contact me, and my resume.
 
 ## Table of Contents
 * [License](#license)
