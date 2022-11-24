@@ -18,3 +18,12 @@ nav a {
     transition: all 0.25s ease-in;
     font-size: 1.4rem;
 }
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: rgba(238, 238, 247, 1);
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
