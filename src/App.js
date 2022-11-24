@@ -42,7 +42,9 @@ function App() {
             </Header>
 
             {/* Here we are calling the renderPage method which will return a component  */}
-            {renderPage()}
+            <main>
+                {renderPage()}
+            </main>
 
             <Footer />
         </div>

@@ -1,12 +1,13 @@
 import React from 'react';
+import '../css/footer.css'
 
 export default function Footer() {
     return (
-        <footer className='container'>
-            <div>
-                <a className='' href='https://github.com/AliCelikay' target='_blank'>GitHub</a>
-                <a className='' href='https://www.linkedin.com/in/ali-celikay/' target='_blank'>LinkedIn</a>
-                <a className='' href='' target='_blank'>StackOverFlow</a>
+        <footer>
+            <div className='content'>
+                <a className='' target="_blank" href='https://github.com/AliCelikay' rel="noopener noreferrer" >GitHub</a>
+                <a className='' target="_blank" href='https://www.linkedin.com/in/ali-celikay/' rel="noopener noreferrer" >LinkedIn</a>
+                <a className='' href='https://www.codewars.com/users/AliCelikay129' target="_blank" rel="noopener noreferrer" >CodeWars</a>
             </div>
         </footer>
     );

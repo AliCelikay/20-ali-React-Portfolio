@@ -1,0 +1,28 @@
+footer {
+    position: sticky !important;
+    position:fixed !important;
+    bottom: 0 !important;
+    
+    display: flex !important;
+    align-items: center;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    
+    background-color: rgba(49, 52, 61, 1);
+    width: 100% !important;
+    height: 70px !important;
+    
+    
+    /* padding: 30px; */
+    /* margin:auto; */
+    /* left:0px; */
+    /* flex-direction: row !important; */
+    /* navbar need to be above the content, w/o this then the nav would be behind the web conten */
+    /* z-index: 2 !important; */
+    /* display: inline; */
+}
+
+.content {
+    /* align-items: center; */
+    /* justify-content: right !important; */
+}

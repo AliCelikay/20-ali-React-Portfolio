@@ -1,4 +1,5 @@
 import React from 'react';
+import webDevResume from '../../img/WebDev-Resume.pdf'
 
 export default function Resume() {
     return (
@@ -8,7 +9,7 @@ export default function Resume() {
                     Resume
                 </h2>
                 <div>
-                    <p>Download my <a href='#' target="_blank">resume</a></p>
+                    <p>Download my <a href={webDevResume} target="_blank" rel="noreferrer">resume</a></p>
                 </div>
                 <div>
                     <h3>Front-end Proficiencies</h3>
@@ -29,7 +30,6 @@ export default function Resume() {
                         <li>Express</li>
                         <li>MySQL, Sequelize</li>
                         <li>MongoDB, Mongoose</li>
-                        <li>MySQL</li>
                         <li>REST</li>
                         <li>GraphQL</li>
                     </ul>
