@@ -11,7 +11,7 @@ export default function About() {
                     About Me
                 </h2>
                 <div>
-                    <img src={AboutPic}/>
+                    <img alt='mypicture' src={AboutPic}/>
                     <div>
                         <p>
                             Hi, my name is Ali Celikay.

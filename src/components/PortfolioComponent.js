@@ -1,5 +1,6 @@
 // We have to first import `useState` with React in order to take advantage of the hook
 import React, { useState } from 'react';
+// import Header from "./Header";
 import Navbar from "./Navbar";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -34,8 +35,10 @@ function PortfolioComponent() {
 
     return (
         <div>
-            {/* We are passing the currentPage from state and the function to update it */}
-            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+            {/* <Header> */}
+                {/* We are passing the currentPage from state and the function to update it */}
+                <Navbar currentPage={currentPage} handlePageChange={handlePageChange}></Navbar>
+            {/* </Header> */}
 
             {/* Here we are calling the renderPage method which will return a component  */}
             {renderPage()}
