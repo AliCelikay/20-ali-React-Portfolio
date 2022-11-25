@@ -1,0 +1,11 @@
+.bioCont {
+    display: flex;
+    align-items: center;
+}
+
+
+.bioInfo{
+    margin-left: 20px;
+}
+
+
